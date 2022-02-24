@@ -1,0 +1,35 @@
+.larg-nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 68px;
+  .v-list {
+    display: flex;
+    background: transparent !important;
+
+    .v-list-item:not(.v-list-item--active) {
+      color: #fff !important;
+    }
+  }
+}
+.v-list-item {
+  &:hover {
+    *{
+      color: #1abc9c !important;
+
+    }
+  }
+}
+
+.v-app-bar {
+  box-shadow: none !important;
+  background: transparent !important;
+  padding-right: 176px;
+  padding-top: 17px;
+}
+.v-list-item--active::before {
+  opacity: 0 !important;
+}
+.v-list-item--active {
+  color: #1abc9c !important;
+}

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "icomoon";
+  src: url(~/assets/fonts/icomoon.ttf);
+}
+@font-face {
+  font-family: "lightcase";
+  src: url(~/assets/fonts/lightcase.woff);
+  src: url(~/assets/fonts/lightcase.woff2);
+  src: url(~/assets/fonts/lightcase.ttf);
+}
+@font-face {
+  font-family: "AJannatLT";
+  src: url(~/assets/fonts/alfont_com_AAJannatLT-.ttf);
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(~/assets/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+*{
+  font-family: 'Oswald' !important ;
+}

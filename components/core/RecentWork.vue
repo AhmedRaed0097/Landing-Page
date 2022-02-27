@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="recent-work-section">
     <h2 class="recent-wrok-title section-title">RECENT WORK</h2>
 
     <div class="filters">
@@ -22,12 +22,12 @@
     </div>
     <div class="result-container">
       <v-row>
-        <v-col cols="4" v-for="i in 5" :key="i" class="result-col">
+        <v-col cols="4" v-for="i in 8" :key="i" class="result-col">
           <div class="cover">
             <img
               width="100%"
               height="100%"
-              src="~/assets/images/work/5-big.jpg"
+              :src="require(`~/assets/images/work/${i + 1}-big.jpg`)"
               alt=""
               srcset=""
             />
@@ -36,11 +36,9 @@
       </v-row>
     </div>
     <div class="view-more mt-8 mb-4">
-          <center>
-
-          <v-btn class="more-btn">
-        VIEW MORE</v-btn>
-          </center>
+      <center>
+        <v-btn class="more-btn"> VIEW MORE</v-btn>
+      </center>
     </div>
   </div>
 </template>
@@ -61,10 +59,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.result-container {
-  width: 80vw;
-  margin: 0 auto;
-}
+
 .result-col {
   padding-top: 0;
   padding-left: 0;
@@ -88,9 +83,9 @@ export default {
     text-align: center;
     cursor: pointer;
     min-width: 70px;
-      padding: 3px 10px;
+    padding: 3px 10px;
     transition: all 0.2s ease;
-      border-radius: 30px;
+    border-radius: 30px;
     &:hover {
       border: 2px solid #1abc9c;
       color: #1abc9c;

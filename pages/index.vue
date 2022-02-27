@@ -1,20 +1,22 @@
 <template>
-  <div style="height: 8000px">
+  <div>
     <!--  -->
-    <Header class="component" />
-    <OurServices class="component" />
+    <Header />
+    <OurServices />
     <RecentWork class="component" />
     <Carousel class="component" :objectType="'qoutes'" />
     <OurBlog class="component" />
     <PricingTables class="component" />
     <OurTeam />
     <Carousel class="component" :objectType="'brands'" />
+    <ContacUs class="component" />
   </div>
 </template>
 
 <script>
 import PricingTables from "@/components/core/PricingTables";
 import OurServices from "@/components/core/OurServices";
+import ContacUs from "@/components/core/ContacUs.vue";
 import RecentWork from "@/components/core/RecentWork";
 import Carousel from "@/components/core/Carousel";
 import OurTeam from "@/components/core/OurTeam";
@@ -27,6 +29,7 @@ export default {
     RecentWork,
     OurTeam,
     Carousel,
+    ContacUs,
     OurTeam,
     OurBlog,
     Header,
@@ -36,6 +39,6 @@ export default {
 
 <style lang="scss" scoped>
 .component {
-  margin: 240px  0 !important;
+  margin: 200px  auto !important;
 }
 </style>

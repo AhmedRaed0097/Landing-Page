@@ -18,11 +18,13 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/scss/nav-footer/style.scss',
+    '~/assets/scss/our-services/style.scss',
     '~/assets/scss/global.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {src: 'plugins/owl-carousel.js', ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

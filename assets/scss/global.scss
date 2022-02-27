@@ -20,3 +20,51 @@
 *{
   font-family: 'Oswald' !important ;
 }
+.icon-heart4:before {
+	content: "\e813";
+}
+
+.icon-star4:before {
+  content: "\e815";
+}
+
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+}
+p{
+  margin: 0 !important;
+}
+
+
+// .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+//   background: #1abc9c !important;
+// }
+
+.owl-dots {
+  .active {
+    span {
+      background: #1abc9c !important;
+      padding: 8.2px;
+    }
+  }
+}
+.v-card{
+  box-shadow: 0px 3px 1px -2px rgb(129 129 129 / 20%),
+  0px 2px 2px 0px rgb(163 150 150 / 14%),
+  0px 1px 5px 0px rgb(185 185 185 / 12%) !important;
+}
+
+
+.brands-carousel .owl-carousel .owl-stage-outer {
+  .owl-stage {
+    // padding: 0 100px !important;
+  }
+  .owl-dots{
+    display: block !important;
+  }
+
+}
+ .owl-carousel .owl-dots.disabled {
+  display: block !important;
+}

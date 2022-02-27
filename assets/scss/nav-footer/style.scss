@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   padding: 0 68px;
+  .logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
   .v-list {
     display: flex;
     background: transparent !important;
@@ -25,7 +30,6 @@
   box-shadow: none !important;
   background: transparent !important;
   padding-right: 176px;
-  padding-top: 17px;
 }
 .v-list-item--active::before {
   opacity: 0 !important;

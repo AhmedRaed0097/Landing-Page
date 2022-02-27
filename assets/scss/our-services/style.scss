@@ -1,0 +1,49 @@
+.our-services-container {
+    height: 90vh;
+    padding: 20px;
+    margin-bottom: 100px !important;
+    .our-service-title{
+      margin-bottom: 80px !important;
+  
+    }
+  }
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 400px;
+    // border: 1px1 solid;
+ 
+    .icon {
+      border: 1px solid #000;
+      width: 100px;
+      height: 95px;
+      margin-bottom: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+    }
+    .service-title{
+      margin-bottom: 20px;
+      font-size: 1.7rem;
+      font-weight: normal;
+    }
+    .description {
+      text-align: center;
+      color: #949494;
+    }
+  }
+  .more-btn {
+    background: #1abc9c !important;
+    height: 40px !important;
+    color: #fff !important;
+    border-radius: 28px !important;
+    box-shadow: none !important;
+    
+  }

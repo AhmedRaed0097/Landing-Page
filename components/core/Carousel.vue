@@ -38,7 +38,7 @@
         :autoplay="true"
         :autoplayTimeout="3000"
         :autoplaySpeed="1000"
-        :margin="50"
+        :margin="20"
         :stagePadding="100"
       >
         <div v-for="i in 4" :key="i" class="carousel-item-container">
@@ -70,6 +70,7 @@ export default {
 <style lang="scss" scoped>
 .carousel-container {
   margin-top: 150px;
+   width: 65vw;
   .carousel-item-container {
     display: flex;
     flex-direction: column;

@@ -26,7 +26,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
-    :color="isScrolling === true ? '#f00' : 'transparent'"
+    :class="isScrolling === true ? 'scrolled' : 'not-scrolled'"
     :clipped-left="clipped" fixed app>
       <div class="larg-nav-container">
         <div class="logo">
@@ -137,5 +137,7 @@ export default {
 };
 </script>
 <style lang="scss">
-
+.scrolled{
+  background: #2c2d31 !important;
+}
 </style>

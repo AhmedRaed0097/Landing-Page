@@ -1,5 +1,5 @@
 <template>
-  <div class="our-blog-container">
+  <div class="our-blog-container" id="our-blog-section">
     <h2 class="our-blog-title section-title mt-16 mb-16">OUR BLOG</h2>
     <section class="result-container">
       <v-row>

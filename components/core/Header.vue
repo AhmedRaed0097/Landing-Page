@@ -1,5 +1,5 @@
 <template>
-  <section class="header-container">
+  <section class="header-container" id="header-section">
     <section class="header-text">
       <h2>WE ARE CREATIVE DESIGN AGENCY</h2>
       <p>
@@ -26,7 +26,7 @@ export default {};
   padding: 20px;
   position: relative;
   bottom: 76px;
-  right: 100px;
+  right: 4.5vw;
   background-image: url("@/assets/images/home.jpg");
   // clip-path: polygon(100% 0%, 73% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 38%, 0% 63%, 17% 54%, 32% 50%, 53% 49%, 80% 52%, 89% 57%, 100% 67%, 100% 25%);
 }

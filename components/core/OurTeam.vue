@@ -1,5 +1,5 @@
 <template>
-  <div class="our-team-container">
+  <div class="our-team-container" id="our-team-section">
     <h2 class="our-team section-title mt-16 mb-16">OUR TEAM</h2>
     <section>
       <v-row>
@@ -12,7 +12,7 @@
                 alt="team member"
               />
             </div>
-            
+
             <div class="accounts">
               <v-icon>mdi mdi-facebook</v-icon>
               <v-icon>mdi mdi-twitter</v-icon>
@@ -71,7 +71,7 @@ export default {
   // z-index: 1;
   opacity: 1;
 
-  }    
+  }
   }
   img {
     border-radius: 8px 8px 0 0 ;

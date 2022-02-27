@@ -1,5 +1,5 @@
 <template>
-  <div class="our-services-container">
+  <div class="our-services-container" id="our-service-section">
       <h2 class="our-service-title section-title">OUR SERVICES</h2>
     <v-row>
       <v-col lg="3" v-for="i in 4" :key="i">
@@ -13,7 +13,7 @@
             Perspiciatis voluptatem corporis nobis ea dolorum veniam natus hic.
             Ratione .
           </p>
-          <v-btn class="more-btn" 
+          <v-btn class="more-btn"
             >Read More</v-btn
           >
         </section>

@@ -1,5 +1,5 @@
 <template>
-  <div class="pricing-tables-container">
+  <div class="pricing-tables-container" id="pricing-tables-section">
     <h2 class="pricing-tables-title section-title mt-16 mb-16">
       PRICING TABLES
     </h2>
@@ -92,7 +92,7 @@ export default {
 .table-section {
   border: 3px solid #dee3e4;
   border-radius: 7px;
-  height: 513px;
+  height: 600px;
 }
 .table-section {
   position: relative;
@@ -136,13 +136,16 @@ export default {
     }
   }
   .details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     p {
-      margin: 15px 0 !important;
       color: #979797;
       span {
         color: #000;
       }
     }
+      margin-bottom: 20px !important;
   }
   .btn-container {
     width: 100%;

@@ -24,9 +24,9 @@ export default {};
   width: 100vw;
   height: 700px;
   padding: 20px;
-  position: absolute;
-  top: -64px;
-  left: 0;
+  position: relative;
+  bottom: 76px;
+  right: 100px;
   background-image: url("@/assets/images/home.jpg");
   // clip-path: polygon(100% 0%, 73% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 38%, 0% 63%, 17% 54%, 32% 50%, 53% 49%, 80% 52%, 89% 57%, 100% 67%, 100% 25%);
 }
@@ -36,7 +36,7 @@ export default {};
   color: #fff;
   position: absolute;
   right: 0;
-  bottom:50px;
+  bottom: 50px;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@ export default {};
     width: 770px;
     text-align: center;
   }
-  .v-btn{
+  .v-btn {
     padding: 22px 20px;
     border: 2px solid #fff;
   }

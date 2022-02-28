@@ -26,8 +26,11 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
-    :class="isScrolling === true ? 'scrolled' : 'not-scrolled'"
-    :clipped-left="clipped" fixed app>
+      :class="isScrolling === true ? 'scrolled' : 'not-scrolled'"
+      :clipped-left="clipped"
+      fixed
+      app
+    >
       <div class="larg-nav-container">
         <div class="logo">
           <h1>MySite</h1>
@@ -53,16 +56,22 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+      <Nuxt />
     </v-main>
+
+    <v-footer>
+      <Footer />
+    </v-footer>
   </v-app>
 </template>
 
 <script>
+import Footer from "@/components/core/Footer.vue";
 export default {
   name: "DefaultLayout",
+  components: {
+    Footer,
+  },
   data() {
     return {
       isScrolling: false,
@@ -112,32 +121,31 @@ export default {
       title: "Vuetify.js",
     };
   },
-  methods:{
-
+  methods: {
     handleScroll(event) {
       if (window.scrollY > 0) {
-        this.isScrolling = true
+        this.isScrolling = true;
       } else {
-        this.isScrolling = false
+        this.isScrolling = false;
       }
       // Any code to be executed when the window is scrolled
     },
   },
-   created() {
+  created() {
     if (process.browser) {
       if (window.scrollY > 0) {
-        this.handleScroll()
+        this.handleScroll();
       }
-      window.addEventListener('scroll', this.handleScroll)
+      window.addEventListener("scroll", this.handleScroll);
     }
   },
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>
 <style lang="scss">
-.scrolled{
+.scrolled {
   background: #2c2d31 !important;
 }
 </style>

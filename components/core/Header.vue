@@ -12,6 +12,20 @@
         <v-btn rounded outlined color="#fff">Find Out More</v-btn>
       </div>
     </section>
+
+    <!-- CurveUp -->
+    <svg
+      class="curveUpColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      style="position: absolute; bottom: 0px"
+    >
+      <path fill="white" d="M0 100 C 20 0 50 0 100 100 Z"></path>
+    </svg>
   </section>
 </template>
 
@@ -23,10 +37,9 @@ export default {};
 .header-container {
   width: 100vw;
   height: 700px;
-  padding: 20px;
+  padding: 20px 0;
   position: relative;
   bottom: 76px;
-  right: 4.5vw;
   background-image: url("@/assets/images/home.jpg");
   // clip-path: polygon(100% 0%, 73% 0%, 0% 0%, 0% 0%, 0% 25%, 0% 38%, 0% 63%, 17% 54%, 32% 50%, 53% 49%, 80% 52%, 89% 57%, 100% 67%, 100% 25%);
 }

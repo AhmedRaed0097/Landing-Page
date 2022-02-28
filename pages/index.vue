@@ -1,13 +1,13 @@
 <template>
   <div>
     <!--  -->
-    <Header />
-    <OurServices />
+    <Header  />
+    <OurServices class="component"/>
     <RecentWork class="component" />
     <Carousel class="component" :objectType="'qoutes'" />
     <OurBlog class="component" />
-    <PricingTables class="component" />
-    <OurTeam />
+    <PricingTables class="component small-component" />
+    <OurTeam  class="component small-component" />
     <Carousel class="component" :objectType="'brands'" />
     <ContacUs class="component" />
   </div>
@@ -39,6 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .component {
-  margin: 200px  auto !important;
+  margin: 100px  auto !important;
+  position: relative;
 }
 </style>

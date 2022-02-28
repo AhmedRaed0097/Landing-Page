@@ -1,5 +1,16 @@
 <template>
   <div id="recent-work-section">
+    <svg
+      class="curveDownColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path fill="#fff" d="M0 0 C 50 100 80 100 100 0 Z"></path>
+    </svg>
     <h2 class="recent-wrok-title section-title">RECENT WORK</h2>
 
     <div class="filters">
@@ -40,6 +51,19 @@
         <v-btn class="more-btn"> VIEW MORE</v-btn>
       </center>
     </div>
+
+    <!-- CurveUp -->
+    <svg
+      class="curveUpColor bottom-none"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path fill="#fff" d="M0 100 C 20 0 50 0 100 100 Z"></path>
+    </svg>
   </div>
 </template>
 
@@ -59,7 +83,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+#recent-work-section {
+  background: #ecf0f1;
+  h2 {
+    padding-top: 50px;
+  }
+}
 .result-col {
   padding-top: 0;
   padding-left: 0;
@@ -97,4 +126,5 @@ export default {
   color: #1abc9c;
   border-radius: 30px;
 }
+
 </style>

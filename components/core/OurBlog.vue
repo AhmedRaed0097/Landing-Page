@@ -1,5 +1,16 @@
 <template>
   <div class="our-blog-container" id="our-blog-section">
+    <svg
+      class="curveDownColor"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path fill="#fff" d="M0 0 C 50 100 80 100 100 0 Z"></path>
+    </svg>
     <h2 class="our-blog-title section-title mt-16 mb-16">OUR BLOG</h2>
     <section class="result-container">
       <v-row>
@@ -39,6 +50,17 @@
         </center>
       </div>
     </section>
+    <svg
+      class="curveUpColor bottom-none"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="100%"
+      height="100"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path fill="#fff" d="M0 100 C 20 0 50 0 100 100 Z"></path>
+    </svg>
   </div>
 </template>
 
@@ -47,6 +69,9 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.our-blog-container {
+  background: #ecf0f1;
+}
 .blog-result-col {
   .v-card {
     padding-bottom: 30px;

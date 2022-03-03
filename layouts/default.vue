@@ -148,4 +148,7 @@ export default {
 .scrolled {
   background: #2c2d31 !important;
 }
+.v-footer{
+  padding: 0;
+}
 </style>

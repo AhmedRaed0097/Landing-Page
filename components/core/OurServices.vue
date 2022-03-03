@@ -5,7 +5,7 @@
       <v-col lg="3" v-for="i in 4" :key="i">
         <section class="service-container">
           <div class="icon">
-            <p>ICON</p>
+           <img width="60" height="60" :src="require(`~/assets/images/services/service${i}.png`)" alt="">
           </div>
           <h3 class="service-title">Lorem, ipsum dolor.</h3>
           <p class="description">
